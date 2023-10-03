@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #223;
+    justify-content: center;
+    align-items: center;
+}
+#cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(45deg);
+    /* background-color: orange; */
+}
+
+.side{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.front{
+    background-image: url(../images/luffy.jpg);
+    background-size: cover;
+    transform: translateZ(100px);
+}
+.back{
+    background-image: url(../images/goku.jpg);
+    background-size: cover;
+    transform: rotateY(180deg) translateZ(100px);
+}
+.right{
+    background-image: url(../images/naruto.png);
+    background-size: cover;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.left{
+    background-image: url(../images/gojo.png);
+    background-size: cover;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.top{
+    background-image: url(../images/tanjiro.png);
+    background-size: cover;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    background-image: url(../images/bleach.png);
+    background-size: cover;
+    transform: rotateX(-90deg) translateZ(100px);
+}
